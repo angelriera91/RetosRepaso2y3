@@ -28,3 +28,4 @@ let Mobiles = new MobileLibrary("Mediamarkt","Av Denia",ArrayMobile)
 //console.log(Mobiles[2].toString())
 
 console.log(Mobiles.totalPriceCalculation())
+Mobiles.printLibrary()
