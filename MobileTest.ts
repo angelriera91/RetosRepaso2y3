@@ -1,4 +1,5 @@
 import {Mobile} from "./Mobile"
+import {MobileLibrary} from "./MobileLibrary"
 
 let mobile1 = new Mobile("Nokia3210","3210","Nokia",0,"gris",false,0,50)
 let mobile2 = new Mobile("Iphone3G","3G","Apple",8,"black",false,1,120)
@@ -17,9 +18,13 @@ let mobile3 = new Mobile("Samsung Galaxy 10","Galaxy 10","Samsung",128,"blue",tr
 
 mobile1.toString()
 
-let Mobiles:Array<Mobile> = []
-Mobiles = [mobile1,mobile2,mobile3]
+let ArrayMobile : Array<Mobile>
+ArrayMobile = [mobile1,mobile2,mobile3]
 
-console.log(Mobiles[0].toString())
-console.log(Mobiles[1].toString())
-console.log(Mobiles[2].toString())
+let Mobiles = new MobileLibrary("Mediamarkt","Av Denia",ArrayMobile)
+
+//console.log(Mobiles[0].toString())
+//console.log(Mobiles[1].toString())
+//console.log(Mobiles[2].toString())
+
+console.log(Mobiles.totalPriceCalculation())
