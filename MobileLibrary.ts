@@ -40,4 +40,17 @@ export class MobileLibrary{
         return precioTotal
     }
 
+    printLibrary(){       
+
+        console.log( `
+                
+                This is all my mobiles:\n`)
+        
+
+        for(let i=0; i<this.mobiles.length; i++){
+
+            this.mobiles[i].toString()
+
+        }       
+    }
 }
